@@ -1,0 +1,579 @@
+
+body{
+    background-color: aliceblue;    
+    }
+    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(12px);
+    background-color:#050b2ef4;
+   
+}
+.headerIcon{
+    display: flex;
+    gap: 10px;
+    margin: 0;
+}
+.headerIcon>img{
+    width: 140px;
+    height: 90px;
+    border-radius: 15px;
+    margin: 0;
+}
+
+header>.sectionName h1{
+   
+    color: #f0fdfd;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    font-weight: 800;
+    display: flex;
+    padding-right: 25rem;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    gap: 0vw;
+    
+}
+
+header ul li{
+  
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: 400;
+    padding: 20px 20px;
+    border: 1px solid aliceblue;
+    border-radius: 8px;
+    margin: 6px;
+}
+
+header ul li:hover{
+    cursor: pointer;
+    background-color: #354381;
+}
+
+header ul li a{
+    color: #e6ffed;
+    letter-spacing: 0.7px;
+    transition: 0.3s;
+}
+header ul li a img{
+    width: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4px;
+
+}
+
+header ul li a:hover{
+    color: #a0e9ee;
+}
+
+section > div{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    font-size: 18px;
+    padding: 1vw;
+   
+}
+label {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #05021e;
+
+}
+
+section > :first-child > div{
+    margin-top: 20vh;
+ 
+}
+
+.heroImg{
+    height: 100vh;
+    width: 100%;
+    opacity: 80%;
+}
+
+#customerForm{
+    background-color: #adafff76;
+    padding: 25px;
+    width: 30vw;
+    margin-left: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px  rgba(55, 55, 79, 0.695);
+
+}
+form div{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-top: 26px;
+}
+
+
+form div input ,select{
+   height: 25px;
+    color: #263140;
+    padding: 10px 20px;
+    border: 1px solid navy;
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+}
+
+.buttons{
+    flex-direction: row;
+    font-size: 18px !important;
+    gap: 6px;
+}
+
+.buttons button{
+    padding: 6px 5px;
+    border: 1px solid #c4c4c4;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.5s;
+    color: #ffffff;
+    width: 160px;
+
+
+}
+
+.buttons button:hover{
+    color: #ffffff;
+    box-shadow: #0f0b76 0px 0px 10px;
+} 
+
+.buttons > :first-child{
+    background-color: #061c7d;
+}
+
+.buttons > :first-child:hover{
+    background-color: #040d48;
+}
+
+.buttons > :nth-child(2){
+    background-color: #DB3843;
+}
+
+.buttons > :nth-child(2):hover{
+    background-color: #ff0011;
+}
+
+.buttons > :nth-child(3){
+    background-color: #259809;
+}
+
+.buttons > :nth-child(3):hover{
+    background-color: #47cd17;
+}
+
+.buttons > :nth-child(4){
+    background-color: #475c57;
+}
+
+.buttons > :nth-child(4):hover{
+    background-color: #e5eee7;
+    color: #000000;
+}
+
+#CustomerManage{
+   
+    background-color: aliceblue;
+    height: 100vh;
+}
+#CustomerManage table , #ItemManage table{
+    margin-left: 40px;
+    margin-top: 10%;
+    
+}
+
+#CustomerManage th , #CustomerManage td , #ItemManage th , #ItemManage td{
+    border:none;
+    width: 20vw;
+    height: 5vh;
+    text-align: center;
+    border: 1px solid #d4e8faf8;
+    background-color: #0b4170d3;
+    color: #ffffff;
+}
+
+#CustomerManage td , #ItemManage td{
+    background-color: #3979ab;
+    color: rgb(255, 255, 255);
+}
+
+section{
+    display: none;
+}
+
+.includeDetails{
+    border: 1px solid #000000;
+    padding: 10px;
+    width: 30%;
+   
+}
+
+#OrderManage > div {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+#OrderManage > :first-child > div{
+    margin-top: 12vh;
+}
+
+#OrderManage h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    background-color: #164a7b;
+    padding: 10px 20px;
+    color: white;
+}
+
+#OrderManage .includeDetails form div > div ,#OrderManage .includeDetails form > :last-child{
+    margin-top: 0;
+    margin: 10px 15px;
+}
+
+#OrderManage .includeDetails form > :first-child{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#OrderManage .ItemSelect form > :first-child{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+}
+
+#OrderManage .ItemSelect form div > div , #OrderManage .ItemSelect form > :last-child{
+    margin-top: 0;
+    margin: 10px 15px;
+}
+
+#OrderManage .ItemSelect form > :nth-child(2){
+    display: grid;
+    grid-template-columns: 40% 39% 20%;
+    /* flex-direction: column; */
+    margin: 0;
+}
+
+.ItemSelect > :last-child{
+    display: flex;
+    justify-content: end;
+}
+
+.ItemSelect button{
+    background-color: #0e812e;
+    color: white;
+    margin-top: 58px;
+    margin-right: 20px;
+    width: 160px;
+    border-radius: 6px;
+    padding: 10px 10px;
+    border: 1px solid #c4c4c4;
+    cursor: pointer;
+    
+}
+.ItemSelect button:hover{
+    transition: 0.6ms;
+    background-color: #0c5720;
+    scale: 0.9;
+    box-shadow: #3c3a3a 0px 0px 10px;
+}
+#ItemManage{
+    background-color: aliceblue;
+    height: 100vh;
+}
+
+#ItemForm{
+    background-color: #adafff76;
+    padding: 25px;
+    width: 30vw;
+    margin-left: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px  rgba(55, 55, 79, 0.695);
+
+}
+.ItemSelect{
+    width: 40%;
+    border: 1px solid #000000;
+    padding: 10px;
+    
+}
+.ItemSelect div div input{
+  width: auto;
+}
+
+.ItemSelect #orderQTY label {
+    font-size: 12px;
+}
+
+.ItemSelect #orderQTY{
+    padding-top: 60%;
+}
+
+.ItemSelect #orderQTY input{
+
+    width: 5rem;
+
+}
+
+#OrderManage .TotalCal h1 , .TotalCal h2{
+    background-color: aliceblue;
+    padding: 0;
+    font-size: 30px;
+    color: #0f094a;
+    font-weight: 400;
+}
+
+.TotalCal {
+    border: 1px solid #494747;
+    padding: 20px 60px;
+    width: 35%;
+}
+.TotalCal div div input{
+    width: 100%;
+}
+
+.TotalCal h2{
+    color: #070e5e;
+}
+
+.TotalCal form > :first-child{
+    display: flex;
+    flex-direction: column;
+}
+
+.TotalCal > :last-child{
+    display: flex;
+    justify-content: center;
+}
+
+.TotalCal button{
+    padding: 10px 10px;
+    border: 1px solid #c4c4c4;
+    cursor: pointer;
+    background-color: #09a829;
+    color: white;
+    margin-top: 30px; 
+    border-radius: 6px;
+    width: 160px;
+}
+
+.TotalCal button:hover{
+    transition: 0.6ms;
+    background-color: #0c5720;
+    scale: 0.9;
+    box-shadow: #3c3a3a 0px 0px 10px;
+}
+
+.tableRow{
+   height: auto;
+   
+}
+
+.table > div , .tableRows > div{
+    display: flex;
+    
+}
+
+.table , .tableRows{
+    display: flex;
+    flex-direction: column;
+    padding: 0 5.7vw;
+   
+}
+
+
+.table > div > div , .tableRows > div > div{
+    width: 16vw;
+    height: 6vh;
+    border: 0.5px solid #f8f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.tableRows > div > div{
+    width: 20vw;
+    
+}
+
+#OrderManage > :last-child{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    max-height: 34vh;
+}
+
+.table > div > div{
+    background-color: #0b4170d3;
+    color: white;
+}
+
+h5{
+    font-size: 15px;
+    color: #ff0000;
+    font-weight: 400;
+    position: absolute;
+    margin-top: 8.1vh;
+}
+
+
+#homePage > div{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    padding: 0;
+}
+
+
+table{
+    border-collapse: collapse;
+}
+
+.counts > div{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.counts > div > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 80%;
+    align-items: center;
+    background-color: #11135bd4;
+    width: 200px;
+    text-align: center;
+    padding: 10px 4px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.652);
+
+}
+
+
+.counts h1{
+    font-size: 1.2rem;
+    font-weight: 1000;
+    color: #ffffff;
+}
+
+.counts h2{
+    font-size: 3rem;
+    font-weight: 1000;
+    color: #dcecf1db;
+    margin-top: 20px;
+}
+
+.counts img{
+    margin-top: 7px;
+    width: 40px;
+    height: 40px;
+}
+
+.social{
+    margin: 10px 5px;
+    color: rgb(228, 236, 242);
+ }
+ .social-icons{
+    margin-top: 5px;
+    font-size: 1.7rem;
+    width: 50vw;
+    text-align: center;
+    margin-left: 185px;
+    position: absolute;
+    top: 25vh;
+    left: 25vw;
+    height: 10px;
+   }
+
+   .social:hover{
+    color: rgb(15, 38, 79);
+   }
+#homePage .counts{
+    position: absolute;
+    display: block;
+    height: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.counts > div :hover{
+    background-color: #05021e;
+     transition-property: background-color;
+    transition-duration: 1.2s;
+}
+
+
+/*  
+nav a:hover {
+    background-color: #085d85;
+    color: white;
+  }
+  
+   .nav-button-img {
+    width: 45px;
+    height: 42px;
+  }
+  
+  .nav-button {
+    padding-top: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: background-color 0.3s ease; 
+    width: 90px;
+    margin: 0 20px;
+  }
+  
+  .nav-button-text {
+    margin: 13px;
+    color: #51f0e3;
+    font-size: 1.2rem;
+  }
+  
+  
+  .nav-button:hover h4 {
+    color: white;
+  }
+  
+  .hero-img{
+      width: 100%;
+  }
+   */
